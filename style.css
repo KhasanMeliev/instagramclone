@@ -1,0 +1,349 @@
+:root {
+  --uppart-height: 80px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #222D32;
+}
+.instagram {
+  display: none;
+}
+.uppart {
+  width: 100%;
+  height: var(--uppart-height);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#camera_icon,
+#message_icon,
+#profile_icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.uppart p {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#stories {
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#storie_pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  cursor: pointer;
+}
+#storie_names {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 1070px 0px;
+}
+#box {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  margin: 20px 0px;
+}
+#box .up {
+  width: 100%;
+  height: 90px;
+  background: inherit;
+  border-bottom: 2px solid;
+  display: flex;
+  align-items: center;
+}
+#box .up img {
+  width: 70px;
+  border-radius: 100px;
+  margin: 0px 40px;
+}
+#box .up p {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#box .pic img {
+  width: 100%;
+  height: 300px;
+}
+.down {
+  width: 100%;
+  height: 210px;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.down .icons i {
+  font-size: 30px;
+  color: rgb(126, 114, 114);
+  margin: 10px 20px;
+}
+.texts {
+  color: black;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 444px) {
+  #storie_pic {
+    width: 50px;
+    height: 50px;
+  }
+  #storie_names {
+    font-size: 10px;
+  }
+  #box .up img {
+    width: 50px;
+  }
+  #box .up p {
+    font-size: 20px;
+  }
+}
+#profile {
+  width: 100%;
+  height: 88.5vh;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+#profile .up {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid;
+}
+#profile #profile_pic {
+  width: 110px;
+  border-radius: 100px;
+}
+#profile #profile_name {
+  font-size: 30px;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#profile .follow {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+}
+.posts_follow,
+.followers_follow,
+.following_follow {
+  width: 30vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#profile .posts {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid;
+}
+#profile .posts img {
+  width: 150px;
+  height: 150px;
+}
+
+#create_icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.login {
+  width: 100%;
+  height: 88.5vh;
+  border-top: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 60%;
+  height: 70vh;
+  background-color: #1A2226;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);}
+.box p {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ECF0F5;
+}
+.box input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+  color: white;
+  background-color: #1A2226;
+  border-bottom: 2px solid #0DB8DE;
+  text-align: center;
+}
+.box button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #0DB8DE;
+  border: 1px solid #0DB8DE;
+  cursor: pointer;
+  background-color: #1A2226;
+}
+.box button:hover{
+  background-color: #0DB8DE;
+  color: #1A2226;
+}
+.box #output {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(241, 28, 28);
+}
+#create_post {
+  width: 100%;
+  height: 88.5vh;
+  border-top: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  background-color: white;
+}
+.create {
+  width: 80%;
+  height: 70vh;
+  background-color: rgb(45, 157, 221);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.create p {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+.create input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+  color: #181818;
+  border: 2px solid white;
+  text-align: center;
+}
+.create button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(45, 157, 221);
+  border: 2px solid white;
+  cursor: pointer;
+}
+.create #create_output {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(241, 28, 28);
+}
+#chats_page {
+  width: 100%;
+  display: none;
+  height: 117vh;
+  background-color: white;
+  display: none;
+}
+#chats{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid;
+}
+#chat_image{
+    width: 50px;
+    border-radius: 100px;
+    margin: 0px 5px;
+}
+#chat_names{
+    color: #181818;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 5px;
+}
+#chat_messages{
+    font-size: 25px;
+    color: #3a3636;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 444px) {
+  #storie_pic {
+    width: 50px;
+    height: 50px;
+  }
+  #storie_names {
+    font-size: 10px;
+  }
+  #box .up img {
+    width: 50px;
+  }
+  #box .up p {
+    font-size: 20px;
+  }
+  .box input{
+    width:170px;
+  }
+  .box button{
+    width: 150px;
+  }
+}
